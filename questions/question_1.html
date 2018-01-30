@@ -1,0 +1,30 @@
+<html>
+<header>
+  <title>question 1</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+  $(document).ready(function (){
+    $('#btn').on("click", function(e){
+      e.preventDefault();
+      let x = $('input[name=qq]:checked', '#myForm').val();
+      if (x === "ans01"){
+        alert("Correct!");
+      } else {
+        alert("Wrong!");
+      }
+      console.log(x);
+    });
+  });
+  </script>
+</header>
+<body>
+  <p>Question 1: what is your gender?</p>
+  <form id="myForm">
+     <input type="radio" name="qq" value="ans01"><label>Male</label><br>
+     <input type="radio" name="qq" value="ans02"><label>Female</label><br>
+     <input type="radio" name="qq" value="ans03"><label>Unknown</label><br>
+     <input type="radio" name="qq" value="ans04"><label>I don't know :c</label><br>
+  </form>
+  <button type="submit" id="btn">Submit</button>
+</body>
+</html>

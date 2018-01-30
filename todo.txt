@@ -1,0 +1,11 @@
+= In progress =
+
+
+= todo =
+Change 'navbar' hardcoded name to dynamic name
+Make home page similar to <https://getbootstrap.com/docs/4.0/examples/album/>
+
+= completed =
+MongoDB connection
+Initialize Angular5
+Choose temporary theme <https://getbootstrap.com/docs/4.0/examples/album/>
